@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  max-height: 5vh;
+  width: 90vw;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 4vh 4vw;
+  background-color: black;
+  color: inherit;
+  z-index: 3;
+}
+
+header #menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+header #menu #title {
+  color: red;
+  font-weight: bold;
+  margin-right: 4vw;
+  font-size: 1.5rem;
+}
+
+header #menu a {
+  margin-right: 2.5vw;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+header #menu a.active {
+  color: red;
+}
+
+header #menu a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+/* Make genres dropdown work and look porpperly */
+header #menu #dropdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+header #menu #dropdown i {
+  transform: rotate(180deg);
+}
+
+header #menu #dropdown:hover i {
+  transform: rotate(360deg);
+}
+
+header #menu #dropdown #dropdown-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+header #menu #dropdown #dropdown-head.active {
+  color: red;
+}
+
+header #menu #dropdown #dropdown-head i {
+  transition: 0.3s;
+  margin-left: 1vw;
+}
+
+header #menu #dropdown-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  transform: translateY(3vh);
+  list-style: none;
+  transition: 1s;
+  height: 20vh;
+
+  background-color: black;
+}
+
+header #menu #dropdown:hover #dropdown-content {
+  overflow-y: scroll;
+  width: fit-content;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+::-webkit-scrollbar {
+  width: 0.3vw;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: white;
+  outline: none;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+  outline: none;
+}
+
+header #menu #dropdown #dropdown-content li {
+  display: none;
+}
+
+header #menu #dropdown:hover #dropdown-content li {
+  display: block;
+}
+
+header #menu #dropdown-content a {
+  color: white;
+  margin-right: 0.2vw;
+}
+
+header #menu #dropdown-content a:hover {
+  color: red;
+  transform: scale(1.05);
+}
+/* end of genres dropdown */
+
+header #search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+header #search input {
+  outline: none;
+  border: none;
+  padding: 0.3vh 0.5vw;
+  border-radius: 1em;
+  margin-right: 0.5vw;
+}
+
+header #search button {
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+header #search button:hover {
+  color: red;
+}
+
+main {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15vh;
+  color: inherit;
+}
+
+main #films {
+  padding: 1.5vh 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+main #films div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width: 275px;
+  height: 450px;
+  margin: 5vh 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #films div.film {
+  cursor: pointer;
+}
+
+main #films div h2 {
+  display: none;
+}
+
+main #films div:hover h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  z-index: +2;
+  width: 275px;
+  height: 475px;
+}
+
+main #films #description {
+  display: none;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: +3;
+  width: 90vw;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main #films #description.active {
+  display: block;
+}
+
+main #films #description i {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  right: 2.2vw;
+  top: 3vh;
+  position: absolute;
+}
+
+main #films #description i:hover {
+  color: red;
+}
+
+main #films #description #about {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+main #films #description #about div {
+  background-color: transparent;
+}
+
+main #films #description #about span {
+  color: red;
+}
+
+main #films #description #about #photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main #films #description #about #details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+main #films #description #about #photo {
+  height: 100%;
+  width: 100%;
+}
+
+main #films #description #about #photo h3 {
+  font-size: 1.5rem;
+}
+
+main #films #description #about #details {
+  height: 100%;
+  width: 100%;
+}

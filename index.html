@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinemaW3b</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/db48446642.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="menu">
+        <a id="title">CinemaW3b</a>
+        <a class="active" id="trending">Trending Movies</a>
+        <div id="dropdown">
+          <a id="dropdown-head">
+            Generes
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul id="dropdown-content"></ul>
+        </div>
+        <a href="https://github.com/lubisz03" target="_blank">Github Repo</a>
+      </div>
+      <div id="search">
+        <input type="text" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+    <main>
+      <h1 id="subtitle">Trending Movies</h1>
+      <div id="films">
+        <div id="description">
+          <i class="fa-solid fa-x"></i>
+          <div id="about">
+            <div id="photo">
+              <h3></h3>
+              <div></div>
+            </div>
+            <div id="details">
+              <p id="overview"></p>
+              <br />
+              <p id="rel_date"></p>
+              <br />
+              <p id="rating"></p>
+              <br />
+              <p id="duration"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
