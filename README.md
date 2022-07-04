@@ -33,3 +33,9 @@ This is a concept of a minimalist and non-responsive website allows user to disc
 - HTML5/CSS3 :white_check_mark:
 - JavaScript :white_check_mark: 
 - [The Movies Database API](https://www.themoviedb.org/documentation/api) :white_check_mark: 
+
+## Contributing
+
+Please fork this repository and contribute back using [pull requests](https://github.com/lubisz03/CinemaW3b/pulls).
+
+Any contributions, large or small, major features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed .
