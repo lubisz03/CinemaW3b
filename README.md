@@ -38,4 +38,4 @@ This is a concept of a minimalist and non-responsive website allows user to disc
 
 Please fork this repository and contribute back using [pull requests](https://github.com/lubisz03/CinemaW3b/pulls).
 
-Any contributions, large or small, major features, bug fixes, are welcomed and appreciated but will be thoroughly reviewed .
+Any contributions are welcomed and will be carefully reviewd!
