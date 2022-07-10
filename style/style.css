@@ -17,6 +17,7 @@ body {
   color: white;
 }
 
+/* Header styling */
 header {
   width: 95%;
   height: 5vh;
@@ -174,6 +175,7 @@ header #search button:hover {
   color: red;
 }
 
+/* Main body styling */
 main {
   width: 90%;
   display: flex;
