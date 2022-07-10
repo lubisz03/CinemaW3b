@@ -6,6 +6,7 @@
 
 html,
 body {
+  width: 100vw;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -17,8 +18,8 @@ body {
 }
 
 header {
-  max-height: 5vh;
-  width: 90vw;
+  width: 95%;
+  height: 5vh;
   top: 0;
   position: fixed;
   display: flex;
@@ -62,7 +63,6 @@ header #menu a:hover {
   color: red;
 }
 
-/* Make genres dropdown work and look porpperly */
 header #menu #dropdown {
   display: flex;
   justify-content: flex-start;
@@ -147,7 +147,6 @@ header #menu #dropdown-content a:hover {
   color: red;
   transform: scale(1.05);
 }
-/* end of genres dropdown */
 
 header #search {
   display: flex;
@@ -176,7 +175,7 @@ header #search button:hover {
 }
 
 main {
-  width: 90vw;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
