@@ -6,7 +6,6 @@ This is a concept of a minimalist and non-responsive website that allows user to
 
 ## Screenshots:
 
-
 **_Trending Movies:_**
 
 ![](/screenshots/trending_movies.png)
